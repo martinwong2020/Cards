@@ -1,7 +1,10 @@
 #ifndef CARDS_H
 #define CARDS_H
 
+
 #include <iostream>
+
+#include <vector>
 
 class Card{
     private:
@@ -14,6 +17,7 @@ class Card{
         int get_card_value(); 
         std::pair<int,std::string> get_card();   
         void draw_card(std::pair<int,std::string> card);
+        std::vector<std::pair<int,std::string>> generate_n_cards(int n);
 };
 
 #endif
