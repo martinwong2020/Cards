@@ -1,0 +1,4 @@
+# Cards.CPP
+### This is a C++ project using multi layered file project that incorporates object oriented programming within this project. The code creates different files for different objects to prevent repetition and cleaner code. For example there is a player class for the player and the dealer. The code uses multiple classes and objects within header and cpp files. The game incorporates the mini game 21 which the user would play against the Dealer. The dealer will wager their score and try to get the highest score possible.
+## Running
+### To run the code download the code. Make sure you have g++ and gdb for C++ so the code can run. After enter the command g++ -Wall -Werror -o main cards.cpp main.cpp board.cpp twenty_one.cpp players.cpp which compiles the code. Then type ./main to execute the compiled the code.
