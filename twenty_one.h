@@ -1,8 +1,10 @@
 #ifndef TWENTYONE_H
 #define TWENTYONE_H
 #include <iostream>
-#include "cards.h"
 
+#include "players.h"
+#include "cards.h"
+#include <vector>
 
 class Twenty_one{
     private:
@@ -12,5 +14,7 @@ class Twenty_one{
     void set_cards_played(int n);
     std::pair<std::pair<int,std::string>,std::pair<int,std::string>> deal_twenty_one();
     std::pair<int,std::string> hit();
+    int conversion_card(int card_value);
+    int sum_of_21(std::vector<std::pair<int,std::string>> cards);
 };
 #endif

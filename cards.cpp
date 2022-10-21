@@ -1,6 +1,8 @@
 #include <iostream>
 #include "cards.h"
 #include <vector>
+
+#include "players.h"
 int Card::get_card_value(){
     srand((unsigned) time(NULL));
     // std::cout<<1+(rand()%13);
