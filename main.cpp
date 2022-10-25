@@ -72,7 +72,7 @@ void play_twenty_one(int& score){
         int AI_sum=0;
         std::vector<std::pair<int,std::string>> AI_hand=AI.get_all_cards();
         AI_sum=TO.sum_of_21(AI_hand);
-        if(AI_sum<player_total&& AI_sum<21){
+        if(AI_sum<player_total&& AI_sum<21 && player_total<=21){
             pair<int,string> hit_card=TO.hit();
             AI.set_all_cards(hit_card);
             AI_sum+=hit_card.first;
